@@ -1,0 +1,15 @@
+name: mi-flujo-de-trabajo
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Ejecuta un script
+      run: echo "¡Hola, mundo!"
